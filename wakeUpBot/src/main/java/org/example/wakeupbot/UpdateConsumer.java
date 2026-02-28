@@ -113,7 +113,7 @@ public void ostanovka(Update update) throws URISyntaxException, IOException, Int
     HttpClient client = HttpClient.newHttpClient();
      Gson gson = new Gson();
 
-
+sendMessage(update.getMessage().getChatId(), "Hello, u sent " + update.getMessage().getText());
 
         String stopName = "Hauptmann-Hermann-Platz";
 
